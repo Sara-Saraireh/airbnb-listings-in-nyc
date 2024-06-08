@@ -5,10 +5,9 @@ import pydeck as pdk
 import plotly.express as px
 
 # Add Airbnb logo
-logo_image = st.file_uploader("Upload Airbnb Logo", type=["png", "jpg", "jpeg"])
+st.image("pngkey.com-airbnb-logo-png-605967.png", width=200, use_column_width=True)
 
-if logo_image is not None:
-    st.image(logo_image, caption='Airbnb Logo', width=200, use_column_width=True)
+
 
 
 DATE_TIME = "last_review"
