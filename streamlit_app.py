@@ -46,8 +46,8 @@ st.markdown(
 DATE_TIME = "last_review"
 Data_URL = "AB_NYC_2019.csv"
 
-st.title("Airbnb Listings in New York City")
-st.markdown("This application is a Streamlit dashboard that can be used "
+st.markdown("#Airbnb Listings in New York City")
+st.markdown("###This application is a Streamlit dashboard that can be used "
             "to analyze Airbnb listings in NYC.", unsafe_allow_html=True)
 
 @st.cache_data(persist=True)
