@@ -4,6 +4,40 @@ import numpy as np
 import pydeck as pdk
 import plotly.express as px
 
+# Set Streamlit theme
+st.set_page_config(
+    page_title="Airbnb Listings in New York City",
+    page_icon=":house:",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
+
+# Custom CSS
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    .st-bm {
+        background-color: #1e1e1e;
+    }
+    .st-cc {
+        color: #ffffff;
+    }
+    .st-c3 {
+        color: #cccccc;
+    }
+    .st-gj {
+        background-color: #333333;
+        color: #ffffff;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 DATE_TIME = "last_review"
 Data_URL = "AB_NYC_2019.csv"
 
