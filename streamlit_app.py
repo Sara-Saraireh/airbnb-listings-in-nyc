@@ -4,6 +4,9 @@ import numpy as np
 import pydeck as pdk
 import plotly.express as px
 
+# Add Airbnb logo
+st.image("pngkey.com-airbnb-logo-png-605967.png", width=200)
+
 DATE_TIME = "last_review"
 Data_URL = "AB_NYC_2019.csv"
 
