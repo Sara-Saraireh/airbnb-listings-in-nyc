@@ -54,7 +54,7 @@ st.write(pdk.Deck(
 ))
 
 if st.checkbox("Show raw data", False):
-    st.subheader("Raw data for %s" % neighborhood)
+    st.subheader(f"Raw data for {neighborhood}")
     st.write(neighborhood_data)
 
 st.subheader("Breakdown by room type")
@@ -68,3 +68,26 @@ st.header("Top 5 hosts by number of listings")
 top_hosts = data['host_name'].value_counts().head(5).reset_index()
 top_hosts.columns = ['host_name', 'number_of_listings']
 st.write(top_hosts)
+
+# Additional Features
+st.header("Listings Availability by Month")
+data['month'] = data['last_review'].dt.month
+monthly_data = data['month'].value_counts().reset_index()
+monthly_data.columns = ['month', 'count']
+
+fig2 = px.bar(monthly_data, x='month', y='count', labels={'month': 'Month', 'count': 'Number of Listings'}, title="Number of Listings by Month")
+st.write(fig2)
+
+st.header("Average Price by Room Type")
+room_type_price_data = data.groupby('room_type')['price'].mean().reset_index()
+fig3 = px.pie(room_type_price_data, values='price', names='room_type', title='Average Price by Room Type')
+st.write(fig3)
+
+st.header("Correlation Between Price and Number of Reviews")
+fig4 = px.scatter(data, x='price', y='number_of_reviews', title="Correlation Between Price and Number of Reviews", labels={'price': 'Price', 'number_of_reviews': 'Number of Reviews'})
+st.write(fig4)
+
+st.header("Average Price in Each Neighborhood")
+neighborhood_price_data = data.groupby('neighbourhood_group')['price'].mean().reset_index()
+fig5 = px.bar(neighborhood_price_data, x='neighbourhood_group', y='price', labels={'neighbourhood_group': 'Neighborhood', 'price': 'Average Price'}, title="Average Price in Each Neighborhood")
+st.write(fig5)
