@@ -5,14 +5,11 @@ import pydeck as pdk
 import plotly.express as px
 
 # Add Airbnb logo
-st.markdown(
-    """
-    <div style="display: flex; justify-content: center;">
-        <img src="https://github.com/Sara-Saraireh/airbnb-listings-in-nyc/blob/58ffc7ce1c85b3f41e1c55bbb3e61db6fd87d82b/pngkey.com-airbnb-logo-png-605967.png" alt="Airbnb Logo" width="200"/>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+logo_image = st.file_uploader("Upload Airbnb Logo", type=["png", "jpg", "jpeg"])
+
+if logo_image is not None:
+    st.image(logo_image, caption='Airbnb Logo', width=200, use_column_width=True)
+
 
 DATE_TIME = "last_review"
 Data_URL = "AB_NYC_2019.csv"
