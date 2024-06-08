@@ -8,9 +8,9 @@ import plotly.express as px
 st.set_page_config(
     page_title="Airbnb Listings in New York City",
     page_icon=":house:",
+    layout="wide",
     initial_sidebar_state="collapsed",
 )
-
 
 # Custom CSS
 st.markdown(
@@ -43,13 +43,12 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-
 DATE_TIME = "last_review"
 Data_URL = "AB_NYC_2019.csv"
 
 st.title("Airbnb Listings in New York City")
 st.markdown("This application is a Streamlit dashboard that can be used "
-            "to analyze Airbnb listings in NYC.")
+            "to analyze Airbnb listings in NYC.", unsafe_allow_html=True)
 
 @st.cache_data(persist=True)
 def load_data(nrows):
