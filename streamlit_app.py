@@ -4,51 +4,12 @@ import numpy as np
 import pydeck as pdk
 import plotly.express as px
 
-# Set Streamlit theme
-st.set_page_config(
-    page_title="Airbnb Listings in New York City",
-    page_icon=":house:",
-    layout="wide",
-    initial_sidebar_state="collapsed",
-)
-
-# Custom CSS
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #000000;
-        color: #ffffff;
-    }
-    .st-bm {
-        background-color: #1e1e1e;
-    }
-    .st-cc {
-        color: #ffffff;
-    }
-    .st-c3 {
-        color: #cccccc;
-    }
-    .st-gj {
-        background-color: #333333;
-        color: #ffffff;
-    }
-    .st-hb {
-        background: linear-gradient(135deg, #8A2BE2, #FF69B4);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
 DATE_TIME = "last_review"
 Data_URL = "AB_NYC_2019.csv"
 
-st.markdown("#Airbnb Listings in New York City")
-st.markdown("###This application is a Streamlit dashboard that can be used "
-            "to analyze Airbnb listings in NYC.", unsafe_allow_html=True)
+st.title("Airbnb Listings in New York City")
+st.markdown("This application is a Streamlit dashboard that can be used "
+            "to analyze Airbnb listings in NYC.")
 
 @st.cache_data(persist=True)
 def load_data(nrows):
