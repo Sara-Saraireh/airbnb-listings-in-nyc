@@ -11,6 +11,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
+
 # Custom CSS
 st.markdown(
     """
@@ -32,10 +33,16 @@ st.markdown(
         background-color: #333333;
         color: #ffffff;
     }
+    .st-hb {
+        background: linear-gradient(135deg, #8A2BE2, #FF69B4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     </style>
     """,
     unsafe_allow_html=True,
 )
+
 
 DATE_TIME = "last_review"
 Data_URL = "AB_NYC_2019.csv"
