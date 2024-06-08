@@ -5,7 +5,7 @@ import pydeck as pdk
 import plotly.express as px
 
 # Add Airbnb logo
-st.image("pngkey.com-airbnb-logo-png-605967.png", width=200, use_column_width=True)
+st.image("airbnb-logo.png", width=200, use_column_width=True)
 
 
 
