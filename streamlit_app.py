@@ -5,7 +5,7 @@ import pydeck as pdk
 import plotly.express as px
 
 DATE_TIME = "last_review"
-Data_URL = "/workspaces/airbnb-listings-in-nyc/AB_NYC_2019.csv"
+Data_URL = "AB_NYC_2019.csv"
 
 st.title("Airbnb Listings in New York City")
 st.markdown("This application is a Streamlit dashboard that can be used "
