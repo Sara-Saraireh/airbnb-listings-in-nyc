@@ -8,7 +8,7 @@ import plotly.express as px
 st.markdown(
     """
     <div style="display: flex; justify-content: center;">
-        <img src="pngkey.com-airbnb-logo-png-605967.png" alt="Airbnb Logo" width="200"/>
+        <img src="https://github.com/Sara-Saraireh/airbnb-listings-in-nyc/blob/58ffc7ce1c85b3f41e1c55bbb3e61db6fd87d82b/pngkey.com-airbnb-logo-png-605967.png" alt="Airbnb Logo" width="200"/>
     </div>
     """,
     unsafe_allow_html=True
