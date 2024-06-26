@@ -29,7 +29,5 @@ You can access the live Streamlit app here: [Airbnb NYC Listings App](https://ai
     ```sh
    pip install -r requirements.txt
 
-## Usage
-  To run the Streamlit app:
-     streamlit run streamlit_app.py
+
 
