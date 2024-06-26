@@ -1,19 +1,19 @@
 # Airbnb Listings in NYC
 
-This repository contains data analysis and visualization of Airbnb listings in New York City for the year 2019. The goal is to provide insights and interactive visualizations using Streamlit.
+This repository contains a Streamlit app that visualizes Airbnb listings data in New York City.
 
-## Table of Contents
+## Streamlit App
 
-- [Overview](#overview)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+You can access the live Streamlit app here: [Airbnb NYC Listings App](https://airbnblistingsinnyc-319g1u2bbkn.streamlit.app/)
 
-## Overview
+### Screenshots
 
-This project analyzes the Airbnb listings dataset to explore various trends and patterns. It includes a Streamlit application for interactive data visualization.
+#### Map Visualization
+![Map Visualization](https://github.com/Sara-Saraireh/airbnb-listings-in-nyc/blob/55a13f48ccc046a63bc0f132c2a4d5c431ef1908/screenshots/Screenshot%202024-06-26%20at%201.57.55%20PM.png)
+![Map Visualization](https://github.com/Sara-Saraireh/airbnb-listings-in-nyc/blob/55a13f48ccc046a63bc0f132c2a4d5c431ef1908/screenshots/Screenshot%202024-06-26%20at%201.58.22%20PM.png)
+#### Price Distribution
+![Price Distribution](https://github.com/Sara-Saraireh/airbnb-listings-in-nyc/blob/55a13f48ccc046a63bc0f132c2a4d5c431ef1908/screenshots/Screenshot%202024-06-26%20at%201.58.33%20PM.png)
+![Price Distribution](https://github.com/Sara-Saraireh/airbnb-listings-in-nyc/blob/55a13f48ccc046a63bc0f132c2a4d5c431ef1908/screenshots/Screenshot%202024-06-26%20at%201.58.44%20PM.png)
 
 ## Installation
 
@@ -32,16 +32,4 @@ This project analyzes the Airbnb listings dataset to explore various trends and 
 ## Usage
   To run the Streamlit app:
      streamlit run streamlit_app.py
-
-## Project Structure
-AB_NYC_2019.csv: Dataset file containing Airbnb listings data.
-requirements.txt: Python dependencies.
-streamlit_app.py: Streamlit application script.
-images/: Directory containing logo images.
-
-## Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your improvements.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
